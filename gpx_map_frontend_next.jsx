@@ -1,5 +1,3 @@
-# Project: GPX Map — Next.js + Tailwind + Supabase
-
 ## FILE: package.json
 
 ```json
