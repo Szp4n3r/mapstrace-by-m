@@ -1,18 +1,5 @@
 # Project: GPX Map — Next.js + Tailwind + Supabase
 
-This single-file repository contains a complete starter Next.js React app (single-file bundle for convenience) designed to be dropped into a GitHub repo and deployed on Vercel.
-
-It includes:
-- Beautiful, minimalist UI using Tailwind CSS (map-like colors: light blue / gray / dark)
-- Internationalization toggle (PL / ENG) in header (simple toggle, extendable)
-- Auth (Supabase) — signup / signin / signout
-- Left collapsible sidebar with track list, checkboxes, edit/delete, "Add" button
-- Main area: interactive Leaflet map (React-Leaflet + leaflet-gpx via direct GPX URL usage)
-- Upload flow: file to Supabase Storage, metadata written to `tracks` table
-- Basic RLS guidance and backup/restore notes in README
-
----
-
 ## FILE: package.json
 
 ```json
@@ -435,9 +422,3 @@ create table public.tracks (
 ### Notes
 - This starter uses public bucket URLs for simplicity. For privacy, switch to signed URLs and set RLS policies.
 ```
-
----
-
-End of project file bundle. Adjust and push to GitHub; after that import on Vercel and set `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY` in Project > Environment Variables. 
-
-Enjoy! 
